@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		9C455DA328C678F20085F39F /* Offline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Offline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C455DA628C678F20085F39F /* OfflineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineApp.swift; sourceTree = "<group>"; };
-		9C455DA828C678F20085F39F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9C455DA828C678F20085F39F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; usesTabs = 1; };
 		9C455DAA28C678F20085F39F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C455DAD28C678F20085F39F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
