@@ -12,6 +12,7 @@
 		9C455DAB28C678F20085F39F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C455DAA28C678F20085F39F /* Assets.xcassets */; };
 		9C455DAE28C678F20085F39F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C455DAD28C678F20085F39F /* Preview Assets.xcassets */; };
 		9C581B2628D4BBD000F26303 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C581B2528D4BBD000F26303 /* Styles.swift */; };
+		9C581B2828D4C30B00F26303 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C581B2728D4C30B00F26303 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		9C455DAA28C678F20085F39F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C455DAD28C678F20085F39F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9C581B2528D4BBD000F26303 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		9C581B2728D4C30B00F26303 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				9C455DA628C678F20085F39F /* OfflineApp.swift */,
 				9C455DA828C678F20085F39F /* ContentView.swift */,
+				9C581B2728D4C30B00F26303 /* AccountView.swift */,
 				9C581B2528D4BBD000F26303 /* Styles.swift */,
 				9C455DAA28C678F20085F39F /* Assets.xcassets */,
 				9C455DAC28C678F20085F39F /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C581B2828D4C30B00F26303 /* AccountView.swift in Sources */,
 				9C581B2628D4BBD000F26303 /* Styles.swift in Sources */,
 				9C455DA928C678F20085F39F /* ContentView.swift in Sources */,
 				9C455DA728C678F20085F39F /* OfflineApp.swift in Sources */,

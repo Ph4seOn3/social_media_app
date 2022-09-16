@@ -1,20 +1,30 @@
-//
 //  Styles.swift
-//  Offline
-//
-//  Created by Jeff Korzeniowski on 9/16/22.
-//
+
 
 import SwiftUI
 
 struct StrokeStyle: ViewModifier {
+    var cornerRadius: CGFloat
+    @Environment(\.colorScheme) var colorScheme
     func body(content: Content) -> some View {
         content.overlay(
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .stroke(.linearGradient(colors: [.white.opacity(0.3), .black.opacity(0.1)], startPoint: .top, endPoint: .bottom))
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                .stroke(
+                    .linearGradient(
+                        colors: [
+                            .white.opacity(colorScheme == .dark ? 0.6 : 0.3),
+                            .black.opacity(colorScheme == .dark ? 0.3 : 0.1)
+                        ], startPoint: .top, endPoint: .bottom
+                    )
+                )
                 .blendMode(.overlay)
         )
     }
 
 }
 
+extension View {
+    func strokeStyle(cornerRadius: CGFloat = 30.0) -> some View {
+        modifier(StrokeStyle(cornerRadius: cornerRadius))
+    }
+}
