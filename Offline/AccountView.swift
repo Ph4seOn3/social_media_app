@@ -34,8 +34,13 @@ struct AccountView: View {
                 .background(
                     HexagonView()
                         .offset(x: -50, y: -100)
-                    
-            )
+                )
+                .background(
+                    AnimatedBlobView()
+                        .offset(x: 200, y:0)
+                        .scaleEffect(0.5)
+                )
+            
             Text("Jeff Korzeniowski")
                 .font(.title.weight(.semibold))
             HStack {
