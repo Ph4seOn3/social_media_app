@@ -14,7 +14,7 @@
 		9C581B2628D4BBD000F26303 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C581B2528D4BBD000F26303 /* Styles.swift */; };
 		9C581B2828D4C30B00F26303 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C581B2728D4C30B00F26303 /* AccountView.swift */; };
 		9C581B2A28D4FCEA00F26303 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C581B2928D4FCEA00F26303 /* HexagonView.swift */; };
-		9C581B2C28D504F700F26303 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C581B2B28D504F700F26303 /* BlobView.swift */; };
+		9C581B2C28D504F700F26303 /* AnimatedBlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C581B2B28D504F700F26303 /* AnimatedBlobView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		9C581B2528D4BBD000F26303 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		9C581B2728D4C30B00F26303 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		9C581B2928D4FCEA00F26303 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
-		9C581B2B28D504F700F26303 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
+		9C581B2B28D504F700F26303 /* AnimatedBlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBlobView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				9C455DA628C678F20085F39F /* OfflineApp.swift */,
 				9C455DA828C678F20085F39F /* ContentView.swift */,
 				9C581B2728D4C30B00F26303 /* AccountView.swift */,
-				9C581B2B28D504F700F26303 /* BlobView.swift */,
+				9C581B2B28D504F700F26303 /* AnimatedBlobView.swift */,
 				9C581B2928D4FCEA00F26303 /* HexagonView.swift */,
 				9C581B2528D4BBD000F26303 /* Styles.swift */,
 				9C455DAA28C678F20085F39F /* Assets.xcassets */,
@@ -152,7 +152,7 @@
 				9C581B2828D4C30B00F26303 /* AccountView.swift in Sources */,
 				9C581B2A28D4FCEA00F26303 /* HexagonView.swift in Sources */,
 				9C581B2628D4BBD000F26303 /* Styles.swift in Sources */,
-				9C581B2C28D504F700F26303 /* BlobView.swift in Sources */,
+				9C581B2C28D504F700F26303 /* AnimatedBlobView.swift in Sources */,
 				9C455DA928C678F20085F39F /* ContentView.swift in Sources */,
 				9C455DA728C678F20085F39F /* OfflineApp.swift in Sources */,
 			);
