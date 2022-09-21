@@ -52,10 +52,22 @@ struct TabBar: View {
             )
             .background(
                 HStack {
+                    if selectedTab == .library { Spacer() }
+                    if selectedTab == .explore { Spacer() }
+                    if selectedTab == .notifications {
+                        Spacer()
+                        Spacer()
+                    }
                     Circle().fill(.pink).frame(width: 80)
-                    Spacer()
+                    if selectedTab == .home { Spacer() }
+                    if selectedTab == .explore {
+                        Spacer()
+                        Spacer()
+                        
+                    }
+                    if selectedTab == .notifications { Spacer() }
                 }
-                    .padding(.horizontal, 8)
+                .padding(.horizontal, 8)
             )
             .strokeStyle(cornerRadius: 34)
             .frame(maxHeight: .infinity, alignment: .bottom)
