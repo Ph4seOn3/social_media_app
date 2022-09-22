@@ -5,6 +5,7 @@ import SwiftUI
 
 struct TabBar: View {
     @State var selectedTab: Tab = .home
+    @State var color: Color = .teal
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -27,7 +28,11 @@ struct TabBar: View {
             HStack {
                 ForEach(tabItems) { item in
                     Button {
-                        selectedTab = item.tab
+                        withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                            selectedTab = item.tab
+                            color = item.color
+                        }
+                        
                     } label: {
                         VStack (spacing: 0) {
                             Image(systemName: item.icon)
@@ -58,7 +63,7 @@ struct TabBar: View {
                         Spacer()
                         Spacer()
                     }
-                    Circle().fill(.pink).frame(width: 80)
+                    Circle().fill(color).frame(width: 80)
                     if selectedTab == .home { Spacer() }
                     if selectedTab == .explore {
                         Spacer()
