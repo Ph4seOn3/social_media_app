@@ -66,14 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				9C455DA628C678F20085F39F /* OfflineApp.swift */,
-				9C455DA828C678F20085F39F /* ContentView.swift */,
-				9C79CA2C28DDE94C00144DCC /* HomeView.swift */,
-				9CFB38DC28DB4A1D00A670B7 /* TabBar.swift */,
-				9CFB38DE28DB527600A670B7 /* Tab.swift */,
-				9C581B2728D4C30B00F26303 /* AccountView.swift */,
-				9C581B2B28D504F700F26303 /* AnimatedBlobView.swift */,
-				9C581B2928D4FCEA00F26303 /* HexagonView.swift */,
-				9C581B2528D4BBD000F26303 /* Styles.swift */,
+				9C79CA2E28DDED0A00144DCC /* Navigations */,
+				9C79CA3028DDED8100144DCC /* Views */,
+				9C79CA3128DDED9700144DCC /* Components */,
+				9C79CA3228DDEDA500144DCC /* Model */,
+				9C79CA3328DDEDC000144DCC /* Styles */,
 				9C455DAA28C678F20085F39F /* Assets.xcassets */,
 				9C455DAC28C678F20085F39F /* Preview Content */,
 			);
@@ -86,6 +83,49 @@
 				9C455DAD28C678F20085F39F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9C79CA2E28DDED0A00144DCC /* Navigations */ = {
+			isa = PBXGroup;
+			children = (
+				9CFB38DC28DB4A1D00A670B7 /* TabBar.swift */,
+				9C455DA828C678F20085F39F /* ContentView.swift */,
+			);
+			path = Navigations;
+			sourceTree = "<group>";
+		};
+		9C79CA3028DDED8100144DCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C79CA2C28DDE94C00144DCC /* HomeView.swift */,
+				9C581B2728D4C30B00F26303 /* AccountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9C79CA3128DDED9700144DCC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9C581B2928D4FCEA00F26303 /* HexagonView.swift */,
+				9C581B2B28D504F700F26303 /* AnimatedBlobView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9C79CA3228DDEDA500144DCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CFB38DE28DB527600A670B7 /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C79CA3328DDEDC000144DCC /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				9C581B2528D4BBD000F26303 /* Styles.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
