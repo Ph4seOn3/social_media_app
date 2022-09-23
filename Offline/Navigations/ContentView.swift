@@ -17,7 +17,6 @@ struct ContentView: View {
 				AccountView()
 			case .library:
 				AccountView()
-				
 			}
 		
 			TabBar()
