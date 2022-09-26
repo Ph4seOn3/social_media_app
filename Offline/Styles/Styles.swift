@@ -1,6 +1,5 @@
 //  Styles.swift
 
-
 import SwiftUI
 
 struct StrokeStyle: ViewModifier {

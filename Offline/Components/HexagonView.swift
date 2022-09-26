@@ -1,6 +1,5 @@
 //  HexagonView.swift
 
-
 import SwiftUI
 
 struct HexagonView: View {

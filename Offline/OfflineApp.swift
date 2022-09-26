@@ -1,7 +1,5 @@
 //  OfflineApp.swift
 
-
-
 import SwiftUI
 
 @main

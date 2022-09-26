@@ -1,9 +1,4 @@
-//
 //  FeaturedItem.swift
-//  Offline
-//
-//  Created by Jeff Korzeniowski on 9/23/22.
-//
 
 import SwiftUI
 

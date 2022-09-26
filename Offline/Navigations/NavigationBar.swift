@@ -1,6 +1,5 @@
 //  NavigationBar.swift
 
-
 import SwiftUI
 
 struct NavigationBar: View {

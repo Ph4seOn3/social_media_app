@@ -1,6 +1,5 @@
 //  AccountView.swift
 
-
 import SwiftUI
 
 struct AccountView: View {
