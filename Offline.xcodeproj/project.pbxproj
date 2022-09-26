@@ -20,6 +20,7 @@
 		9C79CA2D28DDE94C00144DCC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C79CA2C28DDE94C00144DCC /* HomeView.swift */; };
 		9C79CA3528DE00C600144DCC /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C79CA3428DE00C600144DCC /* FeaturedItem.swift */; };
 		9C79CA3728DE038700144DCC /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C79CA3628DE038700144DCC /* NavigationBar.swift */; };
+		9C9507D428E1E21B0048AFA8 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9507D328E1E21B0048AFA8 /* Course.swift */; };
 		9CFB38DD28DB4A1D00A670B7 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB38DC28DB4A1D00A670B7 /* TabBar.swift */; };
 		9CFB38DF28DB527600A670B7 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB38DE28DB527600A670B7 /* Tab.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		9C79CA2C28DDE94C00144DCC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9C79CA3428DE00C600144DCC /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 		9C79CA3628DE038700144DCC /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		9C9507D328E1E21B0048AFA8 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		9CFB38DC28DB4A1D00A670B7 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		9CFB38DE28DB527600A670B7 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 			children = (
 				9CFB38DE28DB527600A670B7 /* Tab.swift */,
 				9C463BB328DE460D001C0B3C /* PreferenceKeys.swift */,
+				9C9507D328E1E21B0048AFA8 /* Course.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				9C79CA3728DE038700144DCC /* NavigationBar.swift in Sources */,
 				9C581B2C28D504F700F26303 /* AnimatedBlobView.swift in Sources */,
 				9C455DA928C678F20085F39F /* ContentView.swift in Sources */,
+				9C9507D428E1E21B0048AFA8 /* Course.swift in Sources */,
 				9C455DA728C678F20085F39F /* OfflineApp.swift in Sources */,
 				9C79CA3528DE00C600144DCC /* FeaturedItem.swift in Sources */,
 				9C463BB428DE460D001C0B3C /* PreferenceKeys.swift in Sources */,
