@@ -4,6 +4,9 @@ import SwiftUI
     
 struct HomeView: View {
     @State var hasScrolled = false
+    @Namespace var namespace
+    @State var show = false
+    @State var showStatusBar = true
 
     
     var body: some View {
@@ -12,12 +15,23 @@ struct HomeView: View {
             
             ScrollView {
                scrollDetection
-                
-                
+                                
                 featured
                 
-                
-                Color.clear.frame(height: 1000)
+                Text("Courses".uppercased())
+                    .font(.footnote.weight(.semibold))
+                    .foregroundColor(.secondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 20)
+                if !show {
+                    CourseItem(namespace: namespace, show: $show)                    
+                        .onTapGesture {
+                            withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                                show.toggle()
+                                showStatusBar = false
+                            }
+                        }
+                }
             }
             .coordinateSpace(name: "scroll")
             
@@ -26,8 +40,13 @@ struct HomeView: View {
             })
             .overlay(
                 NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
-        )
+            )
+            
+            if show {
+                CourseView(namespace: namespace, show: $show)
+            }            
         }
+        .statusBar(hidden: !showStatusBar)
     }
     var scrollDetection: some View {
         
