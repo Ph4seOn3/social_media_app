@@ -7,6 +7,8 @@ struct HomeView: View {
     @Namespace var namespace
     @State var show = false
     @State var showStatusBar = true
+    @State var selectedID = UUID()
+    @EnvironmentObject var model: Model
 
     
     var body: some View {
@@ -24,14 +26,16 @@ struct HomeView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 20)
                 if !show {
+                    cards
+                } else {
                     ForEach(courses) { course in
-                        CourseItem(namespace: namespace, course: course, show: $show)
-                            .onTapGesture {
-                                withAnimation(.openCard) {
-                                    show.toggle()
-                                    showStatusBar = false
-                                }
-                        }
+                        Rectangle()
+                            .fill(.white)
+                            .frame(height: 300)
+                            .cornerRadius(30)
+                            .shadow(color: Color("shadow"), radius: 20, x:0, y:10)
+                            .opacity(0.3)
+                        .padding(.horizontal, 30)
                     }
                 }
             }
@@ -45,11 +49,7 @@ struct HomeView: View {
             )
             
             if show {
-                ForEach(courses) { course in
-                    CourseView(namespace: namespace, course: course, show: $show)
-                        .zIndex(1)
-                    .transition(.asymmetric(insertion: .opacity.animation(.easeInOut(duration: 0.1)), removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
-                }
+                detail
             }            
         }
         .statusBar(hidden: !showStatusBar)
@@ -99,12 +99,13 @@ struct HomeView: View {
                                 .frame(height: 230)
                                 .offset(x:32, y: -80)
                                 .offset(x: minX / 2)
-                    )
+                        )
 
                     
 //                    Text("\(proxy.frame(in: .global).minX)")
                 }
             }
+            
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
         .frame(height:430)
@@ -112,10 +113,33 @@ struct HomeView: View {
             .offset(x: 250, y:-100)
         )
     }
+    var cards: some View {
+        ForEach(courses) { course in
+            CourseItem(namespace: namespace, course: course, show: $show)
+                .onTapGesture {
+                    withAnimation(.openCard) {
+                        show.toggle()
+                        model.showDetail.toggle()
+                        showStatusBar = false
+                        selectedID = course.id
+                    }
+            }
+        }
+    }
+    var detail: some View {
+        ForEach(courses) { course in
+            if course.id == selectedID {
+                CourseView(namespace: namespace, course: course, show: $show)
+                    .zIndex(1)
+                .transition(.asymmetric(insertion: .opacity.animation(.easeInOut(duration: 0.1)), removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
+            }
+        }
+    }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(Model())
     }
 }
