@@ -13,6 +13,8 @@ struct CourseView: View {
     @Binding var show: Bool
     @State var appear = [false,false,false]
     @EnvironmentObject var model: Model
+    @State var viewState: CGSize = .zero
+    @State var isDraggable = true
     
     var body: some View {
         ZStack {
@@ -24,6 +26,12 @@ struct CourseView: View {
                     .opacity(appear[2] ? 1 : 0)
             }
             .background(Color("Background"))
+            .mask(RoundedRectangle(cornerRadius: viewState.width / 3, style: .continuous))
+            .shadow(color: .black.opacity(0.3), radius: 30, x: 0, y: 10)
+            .scaleEffect(viewState.width  / -500 + 1)
+            .background(.black.opacity(viewState.width / 500))
+            .background(.ultraThinMaterial)
+            .gesture(isDraggable ? drag : nil)
             .ignoresSafeArea()
             
             button
@@ -66,7 +74,7 @@ struct CourseView: View {
                 RoundedRectangle(cornerRadius: 30, style: .continuous)
                     .matchedGeometryEffect(id: "mask\(course.id)", in: namespace)
                     .offset(y:scrollY > 0 ? -scrollY : 0)
-                    
+                
             )
             .overlay(
                 overlayContent
@@ -78,17 +86,17 @@ struct CourseView: View {
     
     var content: some View {
         VStack(alignment: .leading, spacing: 30) {
-                Text("SwiftUI is hands-down the best way for designers to take a first step into code. ")
-                    .font(.title3).fontWeight(.medium)
-                Text("This course")
-                    .font(.title).bold()
-                Text("This course is unlike any other. We care about design and want to make sure that you get better at it in the process. It was written for designers and developers who are passionate about collaborating and building real apps for iOS and macOS. While it's not one codebase for all apps, you learn once and can apply the techniques and controls to all platforms with incredible quality, consistency and performance. It's beginner-friendly, but it's also packed with design tricks and efficient workflows for building great user interfaces and interactions.")
-                Text("This year, SwiftUI got major upgrades from the WWDC 2020. The big news is that thanks to Apple Silicon, Macs will be able to run iOS and iPad apps soon. SwiftUI is the only framework that allows you to build apps for all of Apple's five platforms: iOS, iPadOS, macOS, tvOS and watchOS with the same codebase. New features like the Sidebar, Lazy Grid, Matched Geometry Effect and Xcode 12's visual editing tools will make it easier than ever to build for multiple platforms.")
-                Text("Multiplatform app")
-                    .font(.title).bold()
-                Text("For the first time, you can build entire apps using SwiftUI only. In Xcode 12, you can now create multi-platform apps with minimal code changes. SwiftUI will automatically translate the navigation, fonts, forms and controls to its respective platform. For example, a sidebar will look differently on the Mac versus the iPad, while using exactly the same code. Dynamic type will adjust for the appropriate platform language, readability and information density. ")
-            }
-            .padding(20)
+            Text("SwiftUI is hands-down the best way for designers to take a first step into code. ")
+                .font(.title3).fontWeight(.medium)
+            Text("This course")
+                .font(.title).bold()
+            Text("This course is unlike any other. We care about design and want to make sure that you get better at it in the process. It was written for designers and developers who are passionate about collaborating and building real apps for iOS and macOS. While it's not one codebase for all apps, you learn once and can apply the techniques and controls to all platforms with incredible quality, consistency and performance. It's beginner-friendly, but it's also packed with design tricks and efficient workflows for building great user interfaces and interactions.")
+            Text("This year, SwiftUI got major upgrades from the WWDC 2020. The big news is that thanks to Apple Silicon, Macs will be able to run iOS and iPad apps soon. SwiftUI is the only framework that allows you to build apps for all of Apple's five platforms: iOS, iPadOS, macOS, tvOS and watchOS with the same codebase. New features like the Sidebar, Lazy Grid, Matched Geometry Effect and Xcode 12's visual editing tools will make it easier than ever to build for multiple platforms.")
+            Text("Multiplatform app")
+                .font(.title).bold()
+            Text("For the first time, you can build entire apps using SwiftUI only. In Xcode 12, you can now create multi-platform apps with minimal code changes. SwiftUI will automatically translate the navigation, fonts, forms and controls to its respective platform. For example, a sidebar will look differently on the Mac versus the iPad, while using exactly the same code. Dynamic type will adjust for the appropriate platform language, readability and information density. ")
+        }
+        .padding(20)
     }
     
     var button: some View {
@@ -135,18 +143,45 @@ struct CourseView: View {
                     .strokeStyle(cornerRadius: 18)
                 Text("Taught by Meng To")
                     .font(.footnote)
-                }
-                .opacity(appear[1] ? 1 : 0)
             }
-                .padding(20)
-                .background(
-                    Rectangle()
-                        .fill(.ultraThinMaterial)
-                        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                        .matchedGeometryEffect(id: "blur\(course.id)", in: namespace)
-                )
-                .offset(y: 250)
-                .padding(20)
+            .opacity(appear[1] ? 1 : 0)
+        }
+        .padding(20)
+        .background(
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                .matchedGeometryEffect(id: "blur\(course.id)", in: namespace)
+        )
+        .offset(y: 250)
+        .padding(20)
+    }
+    
+    var drag: some Gesture {
+        DragGesture(minimumDistance: 30, coordinateSpace: .local)
+            .onChanged { value in
+                guard value.translation.width > 0 else { return }
+                
+                if value.startLocation.x < 100 {
+                    withAnimation(.closeCard) {
+                        viewState = value.translation
+                    }
+                }
+                
+                if viewState.width > 120 {
+                    close()
+                }
+                
+            }
+            .onEnded { value in
+                if viewState.width > 80 {
+                    close()
+                } else {
+                    withAnimation(.closeCard) {
+                        viewState = .zero
+                    }
+                }
+            }
     }
     
     func fadeIn() {
@@ -165,8 +200,22 @@ struct CourseView: View {
         appear[0] = false
         appear[1] = false
         appear[2] = false
-        }
     }
+    
+    func close() {
+        withAnimation(.closeCard.delay(0.3)) {
+            show.toggle()
+            model.showDetail.toggle()
+        }
+        withAnimation(.closeCard) {
+            viewState = .zero
+        }
+        
+        isDraggable = false
+    }
+}
+
+
 
 struct CourseView_Previews: PreviewProvider {
     @Namespace static var namespace
