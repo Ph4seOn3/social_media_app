@@ -59,7 +59,7 @@ struct SignInView: View {
                         passwordY = value
                     }
                 Button {
-                    model.selectedModal = .signUp
+                    
                 } label: {
                     Text("Sign In")
                         .frame(maxWidth: .infinity)
@@ -73,7 +73,9 @@ struct SignInView: View {
                
                 HStack {
                     Text("No account yet?")
-                    Button {} label: {
+                    Button {
+                        model.selectedModal = .signUp
+                    } label: {
                         Text("**Sign up**")
                     }
                 }
