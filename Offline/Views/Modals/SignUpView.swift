@@ -1,6 +1,5 @@
 //  SignUpView.swift
 
-
 import SwiftUI
 
 struct SignUpView: View {

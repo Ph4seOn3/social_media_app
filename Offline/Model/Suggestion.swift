@@ -1,6 +1,5 @@
 //  Suggestion.swift
 
-
 import SwiftUI
 
 struct Suggestion: Identifiable {

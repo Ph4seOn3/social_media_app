@@ -1,6 +1,5 @@
 //  Model.swift
 
-
 import SwiftUI
 import Combine
 

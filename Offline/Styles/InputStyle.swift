@@ -1,6 +1,5 @@
 //  InputStyle.swift
 
-
 import SwiftUI
 
 struct InputStyle: ViewModifier {

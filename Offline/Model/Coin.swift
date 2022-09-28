@@ -1,6 +1,5 @@
 //  Coin.swift
 
-
 import SwiftUI
 
 struct Coin: Identifiable, Decodable {

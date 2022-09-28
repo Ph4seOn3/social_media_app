@@ -1,6 +1,5 @@
 //  Address.swift
 
-
 import SwiftUI
 
 struct Address: Identifiable, Decodable {

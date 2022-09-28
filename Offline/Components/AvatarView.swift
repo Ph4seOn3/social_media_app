@@ -1,6 +1,5 @@
 //  AvatarView.swift
 
-
 import SwiftUI
 
 struct AvatarView: View {

@@ -1,6 +1,5 @@
 //  SearchView.swift
 
-
 import SwiftUI
 
 struct SearchView: View {

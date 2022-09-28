@@ -1,6 +1,5 @@
 //  CourseItem.swift
 
-
 import SwiftUI
 
 struct CourseItem: View {
