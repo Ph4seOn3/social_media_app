@@ -34,6 +34,7 @@
 		9C9507EA28E489410048AFA8 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9507E928E489410048AFA8 /* ModalView.swift */; };
 		9C9507EC28E489F30048AFA8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9507EB28E489F30048AFA8 /* SignInView.swift */; };
 		9C9507EF28E4AB6A0048AFA8 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9507EE28E4AB6A0048AFA8 /* AvatarView.swift */; };
+		9C9507F128E4DCC60048AFA8 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9507F028E4DCC60048AFA8 /* Address.swift */; };
 		9CFB38DD28DB4A1D00A670B7 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB38DC28DB4A1D00A670B7 /* TabBar.swift */; };
 		9CFB38DF28DB527600A670B7 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB38DE28DB527600A670B7 /* Tab.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		9C9507E928E489410048AFA8 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		9C9507EB28E489F30048AFA8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		9C9507EE28E4AB6A0048AFA8 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		9C9507F028E4DCC60048AFA8 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		9CFB38DC28DB4A1D00A670B7 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		9CFB38DE28DB527600A670B7 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +166,7 @@
 				9C9507D328E1E21B0048AFA8 /* Course.swift */,
 				9C9507DD28E242460048AFA8 /* Model.swift */,
 				9C9507E128E345AE0048AFA8 /* Suggestion.swift */,
+				9C9507F028E4DCC60048AFA8 /* Address.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				9C9507DA28E2197D0048AFA8 /* CourseView.swift in Sources */,
 				9C581B2A28D4FCEA00F26303 /* HexagonView.swift in Sources */,
 				9C9507E228E345AE0048AFA8 /* Suggestion.swift in Sources */,
+				9C9507F128E4DCC60048AFA8 /* Address.swift in Sources */,
 				9C581B2628D4BBD000F26303 /* Styles.swift in Sources */,
 				9C9507EF28E4AB6A0048AFA8 /* AvatarView.swift in Sources */,
 				9C9507D628E1FCC60048AFA8 /* MatchedView.swift in Sources */,
