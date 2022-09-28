@@ -30,6 +30,7 @@
 		9C9507E228E345AE0048AFA8 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9507E128E345AE0048AFA8 /* Suggestion.swift */; };
 		9C9507E428E351CB0048AFA8 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9507E328E351CB0048AFA8 /* SignUpView.swift */; };
 		9C9507E628E390B70048AFA8 /* AngularButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9507E528E390B70048AFA8 /* AngularButtonStyle.swift */; };
+		9C9507E828E465F60048AFA8 /* InputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9507E728E465F60048AFA8 /* InputStyle.swift */; };
 		9CFB38DD28DB4A1D00A670B7 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB38DC28DB4A1D00A670B7 /* TabBar.swift */; };
 		9CFB38DF28DB527600A670B7 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB38DE28DB527600A670B7 /* Tab.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		9C9507E128E345AE0048AFA8 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 		9C9507E328E351CB0048AFA8 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		9C9507E528E390B70048AFA8 /* AngularButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularButtonStyle.swift; sourceTree = "<group>"; };
+		9C9507E728E465F60048AFA8 /* InputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStyle.swift; sourceTree = "<group>"; };
 		9CFB38DC28DB4A1D00A670B7 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		9CFB38DE28DB527600A670B7 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 				9C463BB528DE54F5001C0B3C /* AnimatableFontModifier.swift */,
 				9C9507DB28E226750048AFA8 /* Animations.swift */,
 				9C9507E528E390B70048AFA8 /* AngularButtonStyle.swift */,
+				9C9507E728E465F60048AFA8 /* InputStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				9C9507E428E351CB0048AFA8 /* SignUpView.swift in Sources */,
 				9C9507DC28E226750048AFA8 /* Animations.swift in Sources */,
 				9C463BB428DE460D001C0B3C /* PreferenceKeys.swift in Sources */,
+				9C9507E828E465F60048AFA8 /* InputStyle.swift in Sources */,
 				9C9507DE28E242460048AFA8 /* Model.swift in Sources */,
 				9CFB38DD28DB4A1D00A670B7 /* TabBar.swift in Sources */,
 				9C463BB628DE54F5001C0B3C /* AnimatableFontModifier.swift in Sources */,
