@@ -99,7 +99,7 @@ struct SignUpView: View {
                     circleColor = .blue
                 } else {
                     circleY = passwordY
-                    circleColor = .red 
+                    circleColor = .red
                 }
             }
         }
