@@ -1,9 +1,4 @@
-//
 //  AngularButtonStyle.swift
-//  Offline
-//
-//  Created by Jeff Korzeniowski on 9/27/22.
-//
 
 import SwiftUI
 

@@ -1,9 +1,4 @@
-//
 //  ModalView.swift
-//  Offline
-//
-//  Created by Jeff Korzeniowski on 9/28/22.
-//
 
 import SwiftUI
 

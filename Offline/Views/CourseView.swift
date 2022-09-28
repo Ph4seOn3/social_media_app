@@ -1,9 +1,5 @@
-//
 //  CourseView.swift
-//  Offline
-//
-//  Created by Jeff Korzeniowski on 9/26/22.
-//
+
 
 import SwiftUI
 
