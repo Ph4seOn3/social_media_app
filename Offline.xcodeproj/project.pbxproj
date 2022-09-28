@@ -102,6 +102,7 @@
 				9C455DA628C678F20085F39F /* OfflineApp.swift */,
 				9C79CA2E28DDED0A00144DCC /* Navigations */,
 				9C79CA3028DDED8100144DCC /* Views */,
+				9C9507ED28E4903B0048AFA8 /* Modals */,
 				9C79CA3128DDED9700144DCC /* Components */,
 				9C79CA3228DDEDA500144DCC /* Model */,
 				9C79CA3328DDEDC000144DCC /* Styles */,
@@ -137,9 +138,6 @@
 				9C9507D528E1FCC60048AFA8 /* MatchedView.swift */,
 				9C9507D928E2197D0048AFA8 /* CourseView.swift */,
 				9C9507DF28E33F400048AFA8 /* SearchView.swift */,
-				9C9507E328E351CB0048AFA8 /* SignUpView.swift */,
-				9C9507EB28E489F30048AFA8 /* SignInView.swift */,
-				9C9507E928E489410048AFA8 /* ModalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +175,16 @@
 				9C9507E728E465F60048AFA8 /* InputStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		9C9507ED28E4903B0048AFA8 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				9C9507E328E351CB0048AFA8 /* SignUpView.swift */,
+				9C9507EB28E489F30048AFA8 /* SignInView.swift */,
+				9C9507E928E489410048AFA8 /* ModalView.swift */,
+			);
+			path = Modals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
