@@ -25,8 +25,7 @@ struct ContentView: View {
 				.offset(y: model.showDetail ? 200 : 0)
 			
 			if showModal {
-				ZStack {
-				ModalView()					}
+				ModalView()
 					.zIndex(1)
 			}
 		}

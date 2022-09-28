@@ -102,7 +102,6 @@
 				9C455DA628C678F20085F39F /* OfflineApp.swift */,
 				9C79CA2E28DDED0A00144DCC /* Navigations */,
 				9C79CA3028DDED8100144DCC /* Views */,
-				9C9507ED28E4903B0048AFA8 /* Modals */,
 				9C79CA3128DDED9700144DCC /* Components */,
 				9C79CA3228DDEDA500144DCC /* Model */,
 				9C79CA3328DDEDC000144DCC /* Styles */,
@@ -138,6 +137,7 @@
 				9C9507D528E1FCC60048AFA8 /* MatchedView.swift */,
 				9C9507D928E2197D0048AFA8 /* CourseView.swift */,
 				9C9507DF28E33F400048AFA8 /* SearchView.swift */,
+				9C9507ED28E4903B0048AFA8 /* Modals */,
 			);
 			path = Views;
 			sourceTree = "<group>";

@@ -19,7 +19,7 @@ struct ModalView: View {
             Color.clear.background(.regularMaterial)
                 .onTapGesture {
                     dismissModal()
-                }
+                } 
                 .ignoresSafeArea()
             Group {
                 switch model.selectedModal {
