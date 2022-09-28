@@ -81,7 +81,7 @@ struct ModalView: View {
             }
             .onEnded { value in
                 if value.translation.height > 200 {
-                    dismissModal()
+                        dismissModal()                    
                 } else {
                     withAnimation(.openCard) {
                         viewState = .zero
