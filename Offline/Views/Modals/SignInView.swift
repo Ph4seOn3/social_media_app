@@ -22,6 +22,7 @@ struct SignInView: View {
     @State var circleColor: Color = .blue
     @State var appear = [false, false, false]
     @EnvironmentObject var model: Model
+    @AppStorage("isLogged") var isLogged = false
     
     
     var body: some View {
@@ -59,7 +60,7 @@ struct SignInView: View {
                         passwordY = value
                     }
                 Button {
-                    
+                    isLogged = true
                 } label: {
                     Text("Sign In")
                         .frame(maxWidth: .infinity)
