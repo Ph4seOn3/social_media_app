@@ -18,7 +18,7 @@ struct ExploreView: View {
                 Text("Topics".uppercased())
                     .titleStyle()
                 
-                topicsSection
+                topicsSections
                 
                 Text("Popular".uppercased())
                     .titleStyle()

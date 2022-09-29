@@ -27,6 +27,7 @@ struct ContentView: View {
 			if showModal {
 				ModalView()
 					.zIndex(1)
+					.accessibilityAddTraits(.isModal)
 			}
 		}
 		.safeAreaInset(edge: .bottom, spacing: 0) {
