@@ -34,7 +34,14 @@ struct HandbookItem: View {
         .padding()
         .frame(maxWidth: 200)
         .frame(height: 260)
-        .background(.ultraThinMaterial)
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
+        .strokeStyle(cornerRadius: 30)
+        .background(
+            RoundedRectangle(cornerRadius: 30, style: .continuous)
+                .fill(.linearGradient(colors: [.red, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
+                .rotation3DEffect(.degrees(10), axis: (x: 0, y: 1, z: 0), anchor: .bottomTrailing)
+                .rotationEffect(.degrees(180))
+        )
     }
 }
 
